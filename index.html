@@ -22,12 +22,15 @@
         <textarea id="text" rows="10" placeholder="Input text here" class="uk-textarea"></textarea>
       </div>
       <div class="uk-width-1-5@m uk-flex uk-flex-column uk-flex-center">
-        <button class="uk-button uk-button-default" id="translateText">Text to Emoji <span uk-icon="icon: arrow-right"></span></button>
-        <button class="uk-button uk-button-default" id="translateEmoji"><span uk-icon="icon: arrow-left"></span> Emoji to Text</button>
+        <button class="uk-button uk-button-default" id="translateText">Text to Emoji</button>
+        <button class="uk-button uk-button-default" id="translateEmoji">Emoji to Text</button>
       </div>
-      <div class="uk-width-expand@m">
-        <textarea id="emoji" rows="10" placeholder="Input emoji here" class="uk-textarea"></textarea>
-      </div>
+    </div>
+    <div class="uk-margin result-area">
+      <textarea readonly id="result" rows="10" placeholder="Result will be shown here" class="uk-textarea"></textarea>
+      <button id="copyToClipboard" class="copy-to-clipboard" uk-icon="icon: copy">
+      </button>
+      <div id="spinner" class="copy-to-clipboard" style="display: none;" uk-spinner></div>
     </div>
 
     <div id="result"></div>
