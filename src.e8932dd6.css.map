@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AAAA,QACE,qBACF,CAEA,SACE,cAAe,CACf,UACF,CAEA,uBACE,kBACF","file":"src.e8932dd6.css","sourceRoot":"..","sourcesContent":["body, h1 {\n  font-family: 'sofia-pro';\n}\n\ntextarea {\n  font-size: 16px;\n  width: 100%;\n}\n\n.uk-button:first-child {\n  margin-bottom: 16px;\n}"]}
