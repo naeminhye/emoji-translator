@@ -4,11 +4,13 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://use.typekit.net/zhq0vyf.css" />
-    
+
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css"
+    />
+
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
@@ -17,21 +19,44 @@
 
   <body class="uk-padding">
     <h1 class="uk-text-lead">Emoji Translator</h1>
-    
+
     <div class="uk-text-center" uk-grid>
       <div class="uk-width-expand@m">
-        <textarea id="text" rows="10" placeholder="Input text here" class="uk-textarea"></textarea>
+        <textarea
+          id="text"
+          rows="10"
+          placeholder="Input text here"
+          class="uk-textarea"
+        ></textarea>
       </div>
       <div class="uk-width-1-5@m uk-flex uk-flex-column uk-flex-center">
-        <button class="uk-button uk-button-default" id="translateText">Text to Emoji</button>
-        <button class="uk-button uk-button-default" id="translateEmoji">Emoji to Text</button>
+        <button class="uk-button uk-button-default" id="translateText">
+          Text to Emoji
+        </button>
+        <button class="uk-button uk-button-default" id="translateEmoji">
+          Emoji to Text
+        </button>
       </div>
     </div>
     <div class="uk-margin result-area">
-      <textarea readonly id="result" rows="10" placeholder="Result will be shown here" class="uk-textarea"></textarea>
-      <button id="copyToClipboard" class="copy-to-clipboard" uk-icon="icon: copy">
-      </button>
-      <div id="spinner" class="copy-to-clipboard" style="display: none;" uk-spinner></div>
+      <textarea
+        readonly
+        id="result"
+        rows="10"
+        placeholder="Result will be shown here"
+        class="uk-textarea"
+      ></textarea>
+      <button
+        id="copyToClipboard"
+        class="copy-to-clipboard"
+        uk-icon="icon: copy"
+      ></button>
+      <div
+        id="spinner"
+        class="copy-to-clipboard"
+        style="display: none"
+        uk-spinner
+      ></div>
     </div>
 
     <div id="result"></div>
