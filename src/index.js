@@ -1,6 +1,6 @@
 import './styles.css';
 
-import mapper, { telexConverter } from './mapper';
+import mapper, { telexConverter, telexReverter } from './mapper';
 
 document.addEventListener('DOMContentLoaded', function () {
   const resultArea = document.getElementById('result');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       value = value.replaceAll(emoji, character);
     });
 
-    resultArea.value = value;
+    resultArea.value = telexReverter(value);
   });
 
   // Copy to clipboard

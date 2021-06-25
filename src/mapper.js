@@ -119,5 +119,15 @@ function telexConverter(text) {
     .join('');
 }
 
-export { telexConverter };
+function telexReverter(text) {
+  let result = text;
+
+  TelexType.map((telex, index) => {
+    result = result.replaceAll(telex, String.fromCharCode(CharCode[index]));
+  });
+
+  return result;
+}
+
+export { telexConverter, telexReverter };
 export default mapper;

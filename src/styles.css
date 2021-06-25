@@ -1,5 +1,9 @@
-body, h1 {
-  font-family: 'sofia-pro';
+body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+  font-family: 'Dela Gothic One', cursive;
 }
 
 textarea {
