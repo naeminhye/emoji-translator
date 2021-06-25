@@ -1,5 +1,3 @@
-import './styles.css';
-
 import { textToEmoji, emojiToText } from './mapper';
 
 document.addEventListener('DOMContentLoaded', function () {
