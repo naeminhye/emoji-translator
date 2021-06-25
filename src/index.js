@@ -11,26 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Handle click button [Text to Emoji]
   buttonT2E.addEventListener('click', () => {
     resultArea.value = '';
-    // const textAreaValue = telexConverter(textAreaText.value).toLowerCase(); // TODO: case sensitive
-
-    // const result = textAreaValue
-    //   .split('')
-    //   .map((char) => mapper[char])
-    //   .join('');
-
     resultArea.value = textToEmoji(textAreaText.value);
   });
 
   // Handle click button [Emoji to Text]
   buttonE2T.addEventListener('click', () => {
     resultArea.value = '';
-    // const textAreaValue = textAreaText.value;
-    // let value = textAreaValue;
-    // Object.values(mapper).forEach((emoji, index) => {
-    //   const character = Object.keys(mapper)[index];
-    //   value = value.replaceAll(emoji, character);
-    // });
-
     resultArea.value = emojiToText(textAreaText.value);
   });
 
