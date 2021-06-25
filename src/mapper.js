@@ -129,5 +129,25 @@ function telexReverter(text) {
   return result;
 }
 
-export { telexConverter, telexReverter };
+function textToEmoji(text) {
+  const textAreaValue = telexConverter(text).toLowerCase(); // TODO: case sensitive
+
+  return textAreaValue
+    .split('')
+    .map((char) => mapper[char])
+    .join('');
+}
+
+function emojiToText(emoji) {
+  const textAreaValue = emoji;
+  let value = textAreaValue;
+  Object.values(mapper).forEach((emoji, index) => {
+    const character = Object.keys(mapper)[index];
+    value = value.replaceAll(emoji, character);
+  });
+
+  return telexReverter(value);
+}
+
+export { telexConverter, telexReverter, textToEmoji, emojiToText };
 export default mapper;
